@@ -1,0 +1,221 @@
+@use "../../../styles/colors.scss";
+
+a.buttons {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: colors.$black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent colors.$black transparent;
+    transform: rotate(225deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent colors.$black transparent;
+    transform: rotate(45deg);
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: -2px;
+    width: 30px;
+    height: 5px;
+    background-color: colors.$black;
+  }
+
+  &.yellow {
+    border: 2px solid colors.$yellow;
+
+    &::after,
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$yellow;
+    }
+
+    span {
+      border-top: 2px solid colors.$yellow;
+      border-right: 2px solid colors.$yellow;
+      border-left: 2px solid colors.$yellow;
+    }
+  }
+
+  &.blue {
+    border: 2px solid colors.$blue;
+
+    &::after,
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$blue;
+    }
+
+    span {
+      border-top: 2px solid colors.$blue;
+      border-right: 2px solid colors.$blue;
+      border-left: 2px solid colors.$blue;
+    }
+  }
+
+  &.red {
+    border: 2px solid colors.$red;
+
+    &::after,
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$red;
+    }
+
+    span {
+      border-top: 2px solid colors.$red;
+      border-right: 2px solid colors.$red;
+      border-left: 2px solid colors.$red;
+    }
+  }
+
+  &.black {
+    color: colors.$white;
+    border: 2px solid colors.$black;
+
+    &::after,
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$black;
+    }
+
+    span {
+      border-top: 2px solid colors.$black;
+      border-right: 2px solid colors.$black;
+      border-left: 2px solid colors.$black;
+    }
+  }
+
+  &.white {
+    border: 2px solid colors.$white;
+
+    &::after,
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$black;
+    }
+
+    span {
+      border-top: 2px solid colors.$white;
+      border-right: 2px solid colors.$white;
+      border-left: 2px solid colors.$white;
+    }
+  }
+
+  &.filling {
+    &.yellow {
+      background-color: colors.$yellow;
+    }
+
+    &.blue {
+      background-color: colors.$blue;
+    }
+
+    &.red {
+      background-color: colors.$red;
+    }
+
+    &.black {
+      background-color: colors.$black;
+    }
+
+    &.white {
+      background-color: colors.$white;
+    }
+
+    &:hover {
+      background-color: transparent;
+      transition: 0.25s;
+
+      &.yellow {
+        color: colors.$yellow;
+      }
+
+      &.blue {
+        color: colors.$blue;
+      }
+
+      &.red {
+        color: colors.$red;
+      }
+
+      &.black {
+        color: colors.$black;
+      }
+
+      &.white {
+        color: colors.$white;
+      }
+    }
+  }
+
+  &:not(.filling) {
+    &.yellow {
+      color: colors.$yellow;
+    }
+
+    &.blue {
+      color: colors.$blue;
+    }
+
+    &.red {
+      color: colors.$red;
+    }
+
+    &.black {
+      color: colors.$black;
+    }
+
+    &.white {
+      color: colors.$white;
+    }
+
+    &:hover {
+      color: colors.$black;
+      transition: 0.25s;
+
+      &.yellow {
+        background-color: colors.$yellow;
+      }
+
+      &.blue {
+        background-color: colors.$blue;
+      }
+
+      &.red {
+        background-color: colors.$red;
+      }
+
+      &.black {
+        background-color: colors.$black;
+      }
+
+      &.white {
+        background-color: colors.$white;
+      }
+    }
+  }
+}

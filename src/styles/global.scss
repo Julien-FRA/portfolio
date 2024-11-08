@@ -1,7 +1,7 @@
-@import "./colors.scss";
+@use "colors";
 
 body {
-  background-color: $black;
+  background-color: colors.$black;
   margin: 0;
   width: 100vw;
   height: 100vh;
