@@ -1,10 +1,10 @@
 @use "../../../styles/colors";
 
-.title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: 5px;
+.caption {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.75px;
   text-transform: uppercase;
   color: colors.$white;
   margin: 0;
