@@ -1,0 +1,57 @@
+@use "../../../styles/colors";
+
+.divider {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: colors.$white;
+  margin-bottom: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 8px;
+    background-color: colors.$white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4.6px;
+    left: 83.5px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent colors.$black transparent;
+    transform: rotate(135deg);
+  }
+
+  &.yellow {
+    background-color: colors.$yellow;
+
+    &::before {
+      background-color: colors.$yellow;
+    }
+  }
+
+  &.blue {
+    background-color: colors.$blue;
+
+    &::before {
+      background-color: colors.$blue;
+    }
+  }
+
+  &.red {
+    background-color: colors.$red;
+
+    &::before {
+      background-color: colors.$red;
+    }
+  }
+}

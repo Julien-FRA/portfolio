@@ -1,0 +1,67 @@
+@use "../../../styles/colors";
+
+.linkArrow {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: colors.$white;
+  margin: 0;
+  padding-right: 30px;
+
+  &::after {
+    content: url("../../../../public/arrow.svg");
+    position: absolute;
+    top: -2px;
+    right: 0;
+    padding-left: 5px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+      hue-rotate(97deg) brightness(105%) contrast(99%);
+    transition: right 0.25s;
+  }
+
+  &:hover {
+    &::after {
+      right: -5px;
+    }
+  }
+
+  &.yellow {
+    color: colors.$yellow;
+
+    &::after {
+      filter: brightness(0) saturate(100%) invert(84%) sepia(88%)
+        saturate(4478%) hue-rotate(353deg) brightness(95%) contrast(106%);
+    }
+  }
+
+  &.blue {
+    color: colors.$blue;
+
+    &::after {
+      filter: brightness(0) saturate(100%) invert(72%) sepia(79%)
+        saturate(2466%) hue-rotate(138deg) brightness(106%) contrast(107%);
+    }
+  }
+
+  &.red {
+    color: colors.$red;
+
+    &::after {
+      filter: brightness(0) saturate(100%) invert(17%) sepia(92%)
+        saturate(7341%) hue-rotate(342deg) brightness(106%) contrast(108%);
+    }
+  }
+
+  &.black {
+    color: colors.$black;
+
+    &::after {
+      filter: brightness(0) saturate(100%) invert(0%) sepia(94%) saturate(54%)
+        hue-rotate(100deg) brightness(103%) contrast(100%);
+    }
+  }
+}

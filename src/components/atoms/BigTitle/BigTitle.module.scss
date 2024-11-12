@@ -1,0 +1,12 @@
+@use "../../../styles/colors";
+
+.bigTitle {
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 140px;
+  letter-spacing: 40px;
+  text-transform: uppercase;
+  color: colors.$white;
+  margin: 0 auto;
+  text-align: center;
+}
