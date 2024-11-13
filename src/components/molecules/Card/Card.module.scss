@@ -1,0 +1,202 @@
+@use "../../../styles/colors.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent colors.$black transparent;
+    z-index: 100;
+  }
+
+  &:not(.fill) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      opacity: 30%;
+      z-index: -1;
+      transition: width 0.5s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &.topLeft {
+    &::before {
+      content: "";
+      top: -5px;
+      left: -15px;
+      transform: rotate(315deg);
+    }
+  }
+
+  &.topRight {
+    &::before {
+      content: "";
+      top: -5px;
+      right: -15px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &.bottomRight {
+    &::before {
+      content: "";
+      bottom: -5px;
+      right: -15px;
+      transform: rotate(135deg);
+    }
+  }
+
+  &.bottomLeft {
+    &::before {
+      content: "";
+      bottom: -5px;
+      left: -15px;
+      transform: rotate(225deg);
+    }
+  }
+
+  &.none {
+    &::before {
+      content: none;
+    }
+  }
+
+  &.yellow {
+    border: 2px solid colors.$yellow;
+
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$yellow;
+    }
+
+    &::after {
+      background-color: colors.$yellow;
+    }
+
+    &.fill {
+      background-color: colors.$yellow;
+    }
+  }
+
+  &.blue {
+    border: 2px solid colors.$blue;
+
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$blue;
+    }
+
+    &::after {
+      background-color: colors.$blue;
+    }
+
+    &.fill {
+      background-color: colors.$blue;
+    }
+  }
+
+  &.red {
+    border: 2px solid colors.$red;
+
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$red;
+    }
+
+    &::after {
+      background-color: colors.$red;
+    }
+
+    &.fill {
+      background-color: colors.$red;
+    }
+  }
+
+  &.black {
+    border: 2px solid colors.$black;
+
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$black;
+    }
+
+    &::after {
+      background-color: colors.$black;
+    }
+
+    &.fill {
+      background-color: colors.$black;
+    }
+  }
+
+  &.white {
+    border: 2px solid colors.$white;
+
+    &::before {
+      box-shadow: 0 2.5px 0 colors.$white;
+    }
+
+    &::after {
+      background-color: colors.$white;
+    }
+
+    &.fill {
+      background-color: colors.$white;
+    }
+  }
+
+  .textCard {
+    span {
+      display: block;
+      width: 48px;
+      height: 2px;
+      margin-bottom: 30px;
+
+      &.yellow {
+        background-color: colors.$yellow;
+      }
+
+      &.blue {
+        background-color: colors.$blue;
+      }
+
+      &.red {
+        background-color: colors.$red;
+      }
+
+      &.black {
+        background-color: colors.$black;
+      }
+
+      &.white {
+        background-color: colors.$white;
+      }
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  a {
+    width: fit-content;
+    margin: 0 0 0 auto;
+  }
+}
