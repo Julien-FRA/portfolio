@@ -1,0 +1,19 @@
+.icon {
+  width: 34px;
+  height: 34px;
+
+  &.yellow {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(31%) saturate(7500%)
+      hue-rotate(357deg) brightness(104%) contrast(108%);
+  }
+
+  &.blue {
+    filter: brightness(0) saturate(100%) invert(77%) sepia(58%) saturate(2895%)
+      hue-rotate(135deg) brightness(101%) contrast(110%);
+  }
+
+  &.red {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(87%) saturate(6292%)
+      hue-rotate(341deg) brightness(102%) contrast(107%);
+  }
+}

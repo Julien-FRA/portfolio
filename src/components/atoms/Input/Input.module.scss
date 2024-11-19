@@ -1,0 +1,39 @@
+@use "../../../styles/colors";
+
+.inputWrapper {
+  input {
+    background-color: transparent;
+    border: 1px solid colors.$blue;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    color: colors.$white;
+    margin: 0;
+
+    &::placeholder {
+      color: colors.$grey;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: colors.$blue-light;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border-color: colors.$white;
+    }
+
+    &:disabled {
+      border-color: colors.$red;
+      background-color: colors.$red-light;
+      color: colors.$red;
+
+      &::placeholder {
+        color: colors.$red;
+      }
+    }
+  }
+}
