@@ -1,18 +1,17 @@
-import Input from "@/components/atoms/Input";
-import Card from "@/components/molecules/Card";
-import { ChangeEvent } from "react";
+import Paragraph from "@/components/molecules/Paragraph";
+import TitlePage from "@/components/molecules/TitlePage";
 
 const Landing = () => {
   return (
     <>
-      <Input
-        type={"text"}
-        label={"name"}
-        name={"name"}
-        error={false}
-        errorMessage={"test"}
-        placeholder={"Name"}
-        disabled={false}
+      <TitlePage title={"Formation"} colors={"yellow"} />
+      <Paragraph
+        subTitle={"Mastere CTO et Tech Leact"}
+        caption={"2021 - 2023"}
+        content={
+          "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker."
+        }
+        colors={"white"}
       />
     </>
   );
