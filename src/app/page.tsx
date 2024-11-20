@@ -1,46 +1,16 @@
-import IconLink from "@/components/molecules/IconLink";
 import Paragraph from "@/components/molecules/Paragraph";
 import TitlePage from "@/components/molecules/TitlePage";
-import githubSvg from "../../public/github-icon.svg";
 
 const Landing = () => {
   return (
     <>
-      <TitlePage title={"Formation"} colors={"yellow"} />
+      <TitlePage title={"Home page"} colors={"yellow"} />
       <Paragraph
-        subTitle={"Mastere CTO et Tech Leact"}
-        caption={"2021 - 2023"}
+        subTitle={"Qu'est-ce que le Lorem Ipsum?"}
         content={
-          "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker."
+          "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker."
         }
         colors={"white"}
-      />
-      <IconLink
-        colors={"yellow"}
-        src={githubSvg}
-        alt={"github"}
-        link={
-          "https://github.com/Julien-FRA/portfolio/blob/develop/src/components/molecules/TitlePage/index.tsx"
-        }
-        textLink={"Go check"}
-      />
-      <IconLink
-        colors={"red"}
-        src={githubSvg}
-        alt={"github"}
-        link={
-          "https://github.com/Julien-FRA/portfolio/blob/develop/src/components/molecules/TitlePage/index.tsx"
-        }
-        textLink={"Go check"}
-      />
-      <IconLink
-        colors={"blue"}
-        src={githubSvg}
-        alt={"github"}
-        link={
-          "https://github.com/Julien-FRA/portfolio/blob/develop/src/components/molecules/TitlePage/index.tsx"
-        }
-        textLink={"Go check"}
       />
     </>
   );

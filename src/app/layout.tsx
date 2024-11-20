@@ -3,6 +3,7 @@ import { ChildrenProps } from "@/types/Props";
 import type { Metadata } from "next";
 import { Tomorrow } from "next/font/google";
 import "../styles/global.scss";
+import Header from "@/components/organisms/Header";
 
 export const tomorrow = Tomorrow({
   weight: ["400", "600", "700"],
@@ -21,9 +22,8 @@ export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en">
       <body className={`${tomorrow.className}`}>
-        <header>Header</header>
-        <MainLayout>{children}</MainLayout>
-        <footer>Footer</footer>
+        <Header />
+        {children}
       </body>
     </html>
   );
