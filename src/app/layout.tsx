@@ -1,4 +1,3 @@
-import { MainLayout } from "@/layouts/MainLayout";
 import { ChildrenProps } from "@/types/Props";
 import type { Metadata } from "next";
 import { Tomorrow } from "next/font/google";
@@ -23,7 +22,7 @@ export default function RootLayout({ children }: ChildrenProps) {
     <html lang="en">
       <body className={`${tomorrow.className}`}>
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

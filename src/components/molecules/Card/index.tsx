@@ -14,10 +14,6 @@ type CardProps = {
   textColors: "yellow" | "blue" | "red" | "black" | "white";
   corner: "topLeft" | "topRight" | "bottomRight" | "bottomLeft" | "none";
   fill: boolean;
-  size: {
-    width: string;
-    height: string;
-  };
 };
 
 const Card = ({
@@ -28,14 +24,12 @@ const Card = ({
   textColors,
   corner,
   fill,
-  size,
 }: CardProps) => {
   return (
     <div
       className={`${styles.card} ${styles[corner]} ${styles[colors]} ${
         fill ? `${styles.fill}` : ""
       }`}
-      style={{ width: `${size.width}%`, height: `${size.height}px` }}
     >
       <div className={`${styles.textCard}`}>
         <span className={`${styles[textColors]}`} />
