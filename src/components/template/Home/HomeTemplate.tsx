@@ -17,10 +17,6 @@ const HomeTemplate = () => {
         textColors={"black"}
         corner={"topLeft"}
         fill={true}
-        size={{
-          width: "100",
-          height: "480",
-        }}
       />
       <Card
         subTitle={"Formation"}
@@ -35,10 +31,6 @@ const HomeTemplate = () => {
         textColors={"black"}
         corner={"none"}
         fill={true}
-        size={{
-          width: "100",
-          height: "330",
-        }}
       />
       <Card
         subTitle={"Expertise"}
@@ -53,10 +45,6 @@ const HomeTemplate = () => {
         textColors={"red"}
         corner={"topRight"}
         fill={false}
-        size={{
-          width: "100",
-          height: "330",
-        }}
       />
       <Card
         subTitle={"Contactez moi"}
@@ -71,10 +59,6 @@ const HomeTemplate = () => {
         textColors={"yellow"}
         corner={"bottomLeft"}
         fill={false}
-        size={{
-          width: "100",
-          height: "180",
-        }}
       />
       <Card
         subTitle={"Projets"}
@@ -89,10 +73,6 @@ const HomeTemplate = () => {
         textColors={"blue"}
         corner={"none"}
         fill={false}
-        size={{
-          width: "100",
-          height: "330",
-        }}
       />
       <Card
         subTitle={"Expertise"}
@@ -107,10 +87,6 @@ const HomeTemplate = () => {
         textColors={"black"}
         corner={"bottomRight"}
         fill={true}
-        size={{
-          width: "100",
-          height: "330",
-        }}
       />
     </div>
   );

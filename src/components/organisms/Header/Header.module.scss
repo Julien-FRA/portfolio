@@ -17,7 +17,7 @@
     margin-right: 80px;
     cursor: pointer;
     transition: height 0.25s 0.5s;
-    z-index: 10;
+    z-index: 300;
 
     .top,
     .middle,
@@ -99,6 +99,7 @@
     padding: 60px 40px;
     z-index: 5;
     transition: 0.5s right;
+    z-index: 200;
 
     &.active {
       right: 50px;
