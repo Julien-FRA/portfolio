@@ -4,7 +4,7 @@ import Divider from "@/components/atoms/Divider";
 
 type TitlePageProps = {
   title: string;
-  colors: "yellow" | "blue" | "red";
+  colors: "yellow" | "blue" | "red" | "white";
 };
 
 const TitlePage = ({ title, colors }: TitlePageProps) => {

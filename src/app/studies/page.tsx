@@ -1,5 +1,7 @@
+import StudiesTemplate from "@/components/template/Studies/StudiesTemplate";
+
 const Studies = () => {
-  return <h1>Formations</h1>;
+  return <StudiesTemplate />;
 };
 
 export default Studies;

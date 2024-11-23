@@ -1,5 +1,7 @@
+import AboutTemplate from "@/components/template/About/AboutTemplate";
+
 const About = () => {
-  return <h1>A propos</h1>;
+  return <AboutTemplate />;
 };
 
 export default About;
