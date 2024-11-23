@@ -55,4 +55,12 @@
       background-color: colors.$red;
     }
   }
+
+  &.yellow {
+    background-color: colors.$white;
+
+    &::before {
+      background-color: colors.$white;
+    }
+  }
 }

@@ -40,7 +40,7 @@ const Header = () => {
             </LinkArrow>
           </li>
           <li>
-            <LinkArrow link={"/experiences"} colors={"black"}>
+            <LinkArrow link={"/experiencies"} colors={"black"}>
               Experiences
             </LinkArrow>
           </li>
