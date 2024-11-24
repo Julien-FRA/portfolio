@@ -63,22 +63,8 @@ const HomeTemplate = () => {
         }}
         colors={"blue"}
         textColors={"blue"}
-        corner={"none"}
-        fill={false}
-      />
-      <Card
-        subTitle={"Expertise"}
-        text={
-          "Yesterday’s body count lottery rounded out to a solid ‘n’ sturdy thirty! "
-        }
-        cardLink={{
-          link: "/expertises",
-          text: "Découvrir",
-        }}
-        colors={"blue"}
-        textColors={"black"}
         corner={"bottomRight"}
-        fill={true}
+        fill={false}
       />
     </div>
   );

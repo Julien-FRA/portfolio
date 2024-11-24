@@ -3,7 +3,7 @@ import TitlePage from "@/components/molecules/TitlePage";
 
 const ExperienciesTemplate = () => {
   return (
-    <div>
+    <>
       <TitlePage title={"Expériences"} colors={"red"} />
       <Paragraph
         content={"React, Javascript, Typescript, HTML, SCSS, CSS, Drupal."}
@@ -55,7 +55,7 @@ const ExperienciesTemplate = () => {
         }
         colors={"white"}
       />
-    </div>
+    </>
   );
 };
 

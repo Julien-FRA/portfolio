@@ -7,7 +7,7 @@ import gmail from "../../../../public/google-gmail.svg";
 
 const ContactTemplate = () => {
   return (
-    <div>
+    <>
       <TitlePage title={"Contact"} colors={"yellow"} />
       <Paragraph
         content={
@@ -37,7 +37,7 @@ const ContactTemplate = () => {
         link={"mailto:julien.fra3@gmail.com"}
         textLink={"Gmail"}
       />
-    </div>
+    </>
   );
 };
 

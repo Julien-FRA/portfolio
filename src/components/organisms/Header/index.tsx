@@ -53,11 +53,6 @@ const Header = () => {
               Projets
             </LinkArrow>
           </li>
-          <li>
-            <LinkArrow link={"/expertises"} colors={"black"}>
-              Expertises
-            </LinkArrow>
-          </li>
         </ul>
       </nav>
     </div>

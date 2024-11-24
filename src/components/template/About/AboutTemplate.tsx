@@ -3,7 +3,7 @@ import TitlePage from "@/components/molecules/TitlePage";
 
 const AboutTemplate = () => {
   return (
-    <div>
+    <>
       <TitlePage title={"A propos de moi"} colors={"white"} />
       <Paragraph
         content={
@@ -34,7 +34,7 @@ const AboutTemplate = () => {
         content={"Voilà, en quelques mots, qui je suis !"}
         colors={"white"}
       />
-    </div>
+    </>
   );
 };
 

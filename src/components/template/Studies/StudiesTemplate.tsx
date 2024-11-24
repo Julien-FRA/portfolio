@@ -3,7 +3,7 @@ import TitlePage from "@/components/molecules/TitlePage";
 
 const StudiesTemplate = () => {
   return (
-    <div>
+    <>
       <TitlePage title={"Formation"} colors={"yellow"} />
       <Paragraph
         content={
@@ -39,7 +39,7 @@ const StudiesTemplate = () => {
         subTitle={"Prépa Mastère Digital / HETIC"}
         caption={"2020 - 2021"}
       />
-    </div>
+    </>
   );
 };
 
