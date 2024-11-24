@@ -3,33 +3,43 @@ import TitlePage from "@/components/molecules/TitlePage";
 
 const StudiesTemplate = () => {
   return (
-    <div>
+    <>
       <TitlePage title={"Formation"} colors={"yellow"} />
       <Paragraph
         content={
-          "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker."
+          "Expert en transformation digitale et technologique de niveau 7 enregistré au RNCP."
         }
         colors={"white"}
-        subTitle={"Mastere CTO et Tech Leact"}
+        subTitle={"Mastere CTO et Tech Lead / HETIC"}
         caption={"2021 - 2023"}
       />
       <Paragraph
         content={
-          "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker."
+          "Le Mastère CTO & Tech Lead m’a permis d’acquérir une expertise approfondie dans les langages, les infrastructures et les méthodologies de programmation."
         }
         colors={"white"}
-        subTitle={"Mastere CTO et Tech Leact"}
-        caption={"2021 - 2023"}
       />
       <Paragraph
         content={
-          "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker."
+          "Pendant deux ans, à l’école et en entreprise, j'ai consolidé mes compétences, développé mon autonomie, mon esprit critique et ma capacité à travailler en équipe."
         }
         colors={"white"}
-        subTitle={"Mastere CTO et Tech Leact"}
-        caption={"2021 - 2023"}
       />
-    </div>
+      <Paragraph
+        content={
+          "L’objectif d'HETIC étant de me préparer à intégrer le monde de l’entreprise, leur pédagogie a favorisé les travaux de groupe et ma professionnalisation. Elle s'est appuyée sur la réalisation de projets concrets pour des entreprises et sur un enseignement dispensé par des professionnels et des experts du secteur."
+        }
+        colors={"white"}
+      />
+      <Paragraph
+        content={
+          "Formation intensive d’un an, la Prépa Mastère Digital m'a permis d’approfondir ma culture digitale et d’acquérir des compétences en Développement, en Design, en Webmarketing et en Data."
+        }
+        colors={"white"}
+        subTitle={"Prépa Mastère Digital / HETIC"}
+        caption={"2020 - 2021"}
+      />
+    </>
   );
 };
 

@@ -1,5 +1,7 @@
+import ProjectTemplate from "@/components/template/Project/ProjectTemplate";
+
 const Projects = () => {
-  return <div>Projets</div>;
+  return <ProjectTemplate />;
 };
 
 export default Projects;

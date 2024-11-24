@@ -3,16 +3,38 @@ import TitlePage from "@/components/molecules/TitlePage";
 
 const AboutTemplate = () => {
   return (
-    <div>
+    <>
       <TitlePage title={"A propos de moi"} colors={"white"} />
       <Paragraph
         content={
-          "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker."
+          "Bonjour, je m'appelle Julien, j'ai 25 ans, et je suis développeur front-end et fullstack, avec une expertise principalement centrée sur le JavaScript. Passionné depuis toujours par l'informatique, j'adore découvrir les nouvelles technologies et me tenir à jour sur les dernières tendances du développement web."
         }
         colors={"white"}
         subTitle={"Je me présente..."}
       />
-    </div>
+      <Paragraph
+        content={
+          "Mon parcours m'a amené à maîtriser divers frameworks et outils qui gravitent autour de l'écosystème JavaScript, ce qui me permet de créer des applications web modernes et performantes, tant côté client que serveur. Mon travail me tient à cœur, car j'aime la logique du code, la résolution de problèmes, et la satisfaction de voir un projet se concrétiser."
+        }
+        colors={"white"}
+      />
+      <Paragraph
+        content={
+          "En dehors de l'informatique, je suis un grand amateur de jeux vidéo, un passe-temps qui m'a aussi permis de développer mon esprit d'analyse et mon goût pour les défis. Je pratique également du sport pour rester actif et équilibré. Cela me permet de m’aérer l’esprit et de rester en forme, un complément idéal à mes journées de dev :)."
+        }
+        colors={"white"}
+      />
+      <Paragraph
+        content={
+          "Enfin, la musique occupe une place importante dans ma vie. Elle m'accompagne souvent pendant mes sessions de développement et me permet de me plonger dans un univers créatif. Sans oublier les concerts et les festivals en été !"
+        }
+        colors={"white"}
+      />
+      <Paragraph
+        content={"Voilà, en quelques mots, qui je suis !"}
+        colors={"white"}
+      />
+    </>
   );
 };
 

@@ -1,10 +1,14 @@
 "use client";
 import styles from "./Header.module.scss";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useClickAway } from "react-use";
 import LinkArrow from "@/components/atoms/LinkArrow";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const ref = useRef(null);
+
+  useClickAway(ref, () => setOpenMenu(false));
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -13,7 +17,7 @@ const Header = () => {
   const active = openMenu ? "active" : "";
 
   return (
-    <div className={styles.header}>
+    <div ref={ref} className={styles.header}>
       <div
         onClick={toggleMenu}
         className={`${styles.burger} ${styles[active]}`}
@@ -47,11 +51,6 @@ const Header = () => {
           <li>
             <LinkArrow link={"/projects"} colors={"black"}>
               Projets
-            </LinkArrow>
-          </li>
-          <li>
-            <LinkArrow link={"/expertises"} colors={"black"}>
-              Expertises
             </LinkArrow>
           </li>
         </ul>
