@@ -4,7 +4,7 @@ import Caption from "@/components/atoms/Caption";
 import Text from "@/components/atoms/Text";
 
 type ParagraphProps = {
-  subTitle: string;
+  subTitle?: string;
   caption?: string;
   content: string;
   colors: "yellow" | "blue" | "red" | "black" | "white";

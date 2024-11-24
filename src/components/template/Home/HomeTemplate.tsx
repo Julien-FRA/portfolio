@@ -6,9 +6,7 @@ const HomeTemplate = () => {
     <div className={styles.homeTemplate}>
       <Card
         subTitle={"A propos de moi"}
-        text={
-          "Yesterday’s body count lottery rounded out to a solid ‘n’ sturdy thirty! "
-        }
+        text={"Je me présente..."}
         cardLink={{
           link: "/about",
           text: "Découvrir",
@@ -19,10 +17,8 @@ const HomeTemplate = () => {
         fill={true}
       />
       <Card
-        subTitle={"Formation"}
-        text={
-          "Yesterday’s body count lottery rounded out to a solid ‘n’ sturdy thirty! "
-        }
+        subTitle={"Formations"}
+        text={"Mon parcours scolaire."}
         cardLink={{
           link: "/studies",
           text: "Découvrir",
@@ -33,12 +29,10 @@ const HomeTemplate = () => {
         fill={true}
       />
       <Card
-        subTitle={"Expertise"}
-        text={
-          "Yesterday’s body count lottery rounded out to a solid ‘n’ sturdy thirty! "
-        }
+        subTitle={"Experiences"}
+        text={"Mon parcours en entreprise et mes expériences pro."}
         cardLink={{
-          link: "/expertises",
+          link: "/experiencies",
           text: "Découvrir",
         }}
         colors={"red"}
@@ -48,9 +42,7 @@ const HomeTemplate = () => {
       />
       <Card
         subTitle={"Contactez moi"}
-        text={
-          "Yesterday’s body count lottery rounded out to a solid ‘n’ sturdy thirty! "
-        }
+        text={"Mes réseaux sociaux."}
         cardLink={{
           link: "/contact",
           text: "Me contacter",

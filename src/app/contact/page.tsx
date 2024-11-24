@@ -1,5 +1,7 @@
+import ContactTemplate from "@/components/template/Contact/ContactTemplate";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return <ContactTemplate />;
 };
 
 export default Contact;
