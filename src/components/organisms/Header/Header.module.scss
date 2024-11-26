@@ -5,7 +5,7 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  height: 10vh;
+  height: 150px;
   width: 100%;
 
   @media (max-width: 1400px) {
@@ -33,6 +33,11 @@
     transition: height 0.25s 0.5s;
     transform: translateY(-50%);
     z-index: 300;
+
+    @media (min-width: 992px) {
+      width: 50px;
+      height: 30px;
+    }
 
     .top,
     .middle,
@@ -105,16 +110,27 @@
   }
 
   .nav {
-    position: absolute;
-    top: 25%;
+    position: fixed;
+    top: 25px;
     right: -400px;
     background-color: colors.$white;
     width: 270px;
     height: 380px;
     padding: 60px 40px;
-    z-index: 5;
     transition: 0.5s right;
     z-index: 200;
+
+    @media (min-width: 992px) {
+      top: 30px;
+    }
+
+    @media (min-width: 1200px) {
+      top: 35px;
+    }
+
+    @media (min-width: 1400px) {
+      top: 40px;
+    }
 
     &.active {
       right: 20px;

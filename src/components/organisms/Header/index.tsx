@@ -17,7 +17,7 @@ const Header = () => {
   const active = openMenu ? "active" : "";
 
   return (
-    <div ref={ref} className={styles.header}>
+    <header ref={ref} className={styles.header}>
       <div
         onClick={toggleMenu}
         className={`${styles.burger} ${styles[active]}`}
@@ -55,7 +55,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 
