@@ -2,11 +2,38 @@
 
 .bigTitle {
   font-weight: 700;
-  font-size: 128px;
+  font-size: 118px;
   line-height: 140px;
   letter-spacing: 40px;
   text-transform: uppercase;
-  color: colors.$white;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
+
+  @media (max-width: 1400px) {
+    font-size: 96px;
+    letter-spacing: 20px;
+    line-height: 120px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 74px;
+    line-height: 100px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 42px;
+    word-break: break-all;
+  }
 }
