@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "../styles/typography.scss";
+import "../styles/global.scss";
 
 export const degular_medium = localFont({
   src: "../fonts/Degular-Medium.woff2",
@@ -37,7 +37,10 @@ export default function RootLayout({
       lang="fr"
       className={`${degular_medium.variable} ${degular_semiBold.variable} ${acumin_regular.variable} ${acumin_bold.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <div className="grain"></div>
+        <>{children}</>
+      </body>
     </html>
   );
 }
