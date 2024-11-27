@@ -1,0 +1,66 @@
+@use "./colors.scss";
+
+h1,
+.headingOne {
+  font-family: var(--font-degular-semiBold);
+  font-size: 4rem;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+  color: colors.$black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2,
+.headingTwo {
+  font-family: var(--font-degular-semiBold);
+  font-size: 2.8rem;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+  color: colors.$black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3,
+.headingThree {
+  font-family: var(--font-degular-semiBold);
+  font-size: 1.6rem;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+  color: colors.$black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  display: block;
+  font-family: var(--font-degular-semiBold);
+  line-height: 1.8em;
+  letter-spacing: 0em;
+  color: colors.$black;
+  text-decoration: none;
+
+  &.large {
+    font-size: 1.2rem;
+  }
+
+  &.normal {
+    font-size: 1rem;
+  }
+}
+
+p,
+.text {
+  font-family: var(--font-acumin-regular);
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  color: colors.$black;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &.bold {
+    font-family: var(--font-acumin-bold);
+  }
+}
