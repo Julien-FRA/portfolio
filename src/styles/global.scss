@@ -12,7 +12,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 300;
+    z-index: 99;
     transform: translateZ(0);
 
     &:before {
@@ -26,7 +26,6 @@ body {
       background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
       opacity: 0.15;
       pointer-events: none;
-      -webkit-animation: noise 1s steps(2) infinite;
       animation: noise 1s steps(2) infinite;
     }
 
@@ -72,4 +71,11 @@ body {
       }
     }
   }
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
