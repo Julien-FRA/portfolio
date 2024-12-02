@@ -1,17 +1,17 @@
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
     <>
-      <h1>HeadingOne</h1>
-      <h2>HeadinngTwo</h2>
-      <h3>HeadingThree</h3>
-      <a href="" className="large">
-        Large link
-      </a>
-      <a href="" className="normal">
-        Normal link
-      </a>
-      <p className="text">Normal text</p>
-      <p className="text bold">Bold text</p>
+      <Hero
+        location={"Based in Paris"}
+        title={"Hi, this is Julien"}
+        subtitle={[
+          { normal: "Developer", bold: "Front-end/Fullstack Javascript" },
+          { normal: "Currently", bold: "Looking for work" },
+          { normal: "Previously", bold: "Hardis Group, Indexel" },
+        ]}
+      />
     </>
   );
 }
