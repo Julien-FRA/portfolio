@@ -3,12 +3,16 @@
 h1,
 .headingOne {
   font-family: var(--font-degular-semiBold);
-  font-size: 4rem;
+  font-size: calc(4 * (1.2vw + 1rem));
   line-height: 1.2em;
   letter-spacing: -0.02em;
   color: colors.$black;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: 1400px) {
+    font-size: 6rem;
+  }
 }
 
 h2,
