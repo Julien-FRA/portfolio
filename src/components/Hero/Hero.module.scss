@@ -14,12 +14,13 @@
   }
 
   .wrapper {
+    margin: auto;
+    max-width: 1600px;
     padding: 20vh 5vw 10vh;
     width: calc(100vw - 10vw);
-    max-width: 1400px;
 
     @media (min-width: 768px) {
-      padding: 10vh 5vw 10vh;
+      padding: 10vh 5vw;
     }
 
     .heroLocation {

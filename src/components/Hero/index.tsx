@@ -8,7 +8,7 @@ type HeroProps = {
 
 const Hero = ({ location, title, subtitle }: HeroProps) => {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className={styles.wrapper}>
         {location ? <p className={styles.heroLocation}>{location}</p> : null}
         <h1 className={styles.heroTitle}>{title}</h1>
@@ -26,7 +26,7 @@ const Hero = ({ location, title, subtitle }: HeroProps) => {
             )
           : null}
       </div>
-    </div>
+    </section>
   );
 };
 
