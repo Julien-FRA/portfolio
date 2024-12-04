@@ -21,53 +21,55 @@ const Header = () => {
 
   return (
     <header ref={ref} className={styles.header}>
-      <a href="#" className={`${styles.headerLogo} large`}>
-        Julien FRANCOIS
-      </a>
-      <div
-        onClick={toggleMenu}
-        className={`${styles.burgerMenu} ${styles[active]}`}
-      >
-        <span className={styles.top}></span>
-        <span className={styles.middle}></span>
-        <span className={styles.bottom}></span>
+      <div className={styles.wrapper}>
+        <a href="#" className={`${styles.headerLogo} large`}>
+          Julien FRANCOIS
+        </a>
+        <div
+          onClick={toggleMenu}
+          className={`${styles.burgerMenu} ${styles[active]}`}
+        >
+          <span className={styles.top}></span>
+          <span className={styles.middle}></span>
+          <span className={styles.bottom}></span>
+        </div>
+        <nav className={`${styles[active]}`}>
+          <ul className={styles.headerNav}>
+            <li className={styles.headerNavItem}>
+              <a href="#" className={styles.headerNavLink}>
+                Work
+              </a>
+            </li>
+            <li className={styles.headerItem}>
+              <a href="#" className={styles.headerLink}>
+                Projects
+              </a>
+            </li>
+            <li className={styles.headerItem}>
+              <a href="#" className={styles.headerLink}>
+                About
+              </a>
+            </li>
+          </ul>
+          <ul className={styles.headerSocial}>
+            <li className={styles.headerSocialItem}>
+              <a href="#" className={styles.headerSocialLink}>
+                <Image src={github} alt={"github"} />
+              </a>
+            </li>
+            <li className={styles.headerSocialItem}>
+              <a href="#" className={styles.headerSocialLink}>
+                <Image src={linkedin} alt={"linkedin"} />
+              </a>
+            </li>
+            <li className={styles.headerSocialItem}>
+              <a href="#" className={styles.headerSocialLink}>
+                <Image src={mail} alt={"mail"} />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav className={`${styles[active]}`}>
-        <ul className={styles.headerNav}>
-          <li className={styles.headerNavItem}>
-            <a href="#" className={styles.headerNavLink}>
-              Work
-            </a>
-          </li>
-          <li className={styles.headerItem}>
-            <a href="#" className={styles.headerLink}>
-              Projects
-            </a>
-          </li>
-          <li className={styles.headerItem}>
-            <a href="#" className={styles.headerLink}>
-              About
-            </a>
-          </li>
-        </ul>
-        <ul className={styles.headerSocial}>
-          <li className={styles.headerSocialItem}>
-            <a href="#" className={styles.headerSocialLink}>
-              <Image src={github} alt={"github"} />
-            </a>
-          </li>
-          <li className={styles.headerSocialItem}>
-            <a href="#" className={styles.headerSocialLink}>
-              <Image src={linkedin} alt={"linkedin"} />
-            </a>
-          </li>
-          <li className={styles.headerSocialItem}>
-            <a href="#" className={styles.headerSocialLink}>
-              <Image src={mail} alt={"mail"} />
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };
