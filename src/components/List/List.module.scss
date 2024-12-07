@@ -1,0 +1,11 @@
+.list {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  .wrapper {
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 5vw;
+    width: calc(100vw - 10vw);
+  }
+}

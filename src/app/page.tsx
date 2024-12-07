@@ -1,6 +1,8 @@
 import Block from "@/components/Block";
 import Hero from "@/components/Hero";
 import logoHardisGroup from "../assets/images/hardisgroup.png";
+import logoIndexel from "../assets/images/indexel-logo.png";
+import List from "@/components/List";
 
 export default function Home() {
   return (
@@ -20,19 +22,21 @@ export default function Home() {
           {
             src: logoHardisGroup,
             alt: "HardisGroup",
-            subtitle: "Hardis Group",
-            caption: "2 années en tant que développeur web.",
+            subtitle: "Hardis Group - 2022/2023",
+            caption: "React, Javascript, Typescript, HTML, SCSS, CSS, Drupal.",
             href: "/",
           },
           {
-            src: logoHardisGroup,
-            alt: "HardisGroup",
-            subtitle: "Hardis Group",
-            caption: "2 années en tant que développeur web.",
+            src: logoIndexel,
+            alt: "Indexel",
+            subtitle: "Indexel - 2021/2022",
+            caption:
+              "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul.",
             href: "/",
           },
         ]}
       />
+      <List />
     </>
   );
 }
