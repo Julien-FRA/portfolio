@@ -1,43 +1,36 @@
 import styles from "./List.module.scss";
 
-const List = () => {
+type ListProps = {
+  title: string;
+  items: {
+    subtitle: string;
+    caption: string;
+    content: string;
+    href: string;
+  }[];
+};
+
+const List = ({ title, items }: ListProps) => {
   return (
     <section className={styles.list}>
       <div className={styles.wrapper}>
-        <div className={styles.leftContent}>
-          <figure>
-            <img src="" alt="" />
-          </figure>
-        </div>
-        <div className={styles.rightContent}>
-          <h2>Projects</h2>
-          <ul>
-            <li>
-              <a href="#">
-                <div className={styles.item}>
-                  <h3>Envify</h3>
-                  <p>Développement Web</p>
-                </div>
-              </a>
+        <h2 className={styles.ListTitle}>{title}</h2>
+        <ul>
+          {items.map((item, key) => (
+            <li className={styles.item} key={key}>
+              <input type="checkbox" name="accordion" id={`acc` + key} />
+              <label className={styles.label} htmlFor={`acc` + key}>
+                <h3>{item.subtitle}</h3>
+                <p>{item.caption}</p>
+                <span />
+              </label>
+              <div className={styles.content}>
+                <p className="small">{item.content}</p>
+                <a href={item.href}>Learn more</a>
+              </div>
             </li>
-            <li>
-              <a href="#">
-                <div className={styles.item}>
-                  <h3>Envify</h3>
-                  <p>Développement Web</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div className={styles.item}>
-                  <h3>Envify</h3>
-                  <p>Développement Web</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+          ))}
+        </ul>
       </div>
     </section>
   );
