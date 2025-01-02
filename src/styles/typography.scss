@@ -68,4 +68,8 @@ p,
   &.bold {
     font-family: var(--font-acumin-bold);
   }
+
+  &.small {
+    font-size: 1rem;
+  }
 }
