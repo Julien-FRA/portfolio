@@ -1,8 +1,15 @@
 import Block from "@/components/Block";
 import Hero from "@/components/Hero";
+import List from "@/components/List";
+import Stack from "@/components/Stack";
 import logoHardisGroup from "../assets/images/hardisgroup.png";
 import logoIndexel from "../assets/images/indexel-logo.png";
-import List from "@/components/List";
+import nextjs from "../assets/images/nextjs-icon.svg";
+import react from "../assets/images/react.svg";
+import typescript from "../assets/images/typescript-icon.svg";
+import nodejs from "../assets/images/nodejs-icon.svg";
+import sass from "../assets/images/sass.svg";
+import tailwind from "../assets/images/tailwindcss-icon.svg";
 
 export default function Home() {
   return (
@@ -73,6 +80,17 @@ export default function Home() {
                 algorithmes.`,
             href: "/",
           },
+        ]}
+      />
+      <Stack
+        title={"Technologies"}
+        items={[
+          { src: react, alt: "reactjs", techno: "Reactjs" },
+          { src: nextjs, alt: "nextjs", techno: "Nextjs" },
+          { src: nodejs, alt: "nodejs", techno: "Nodejs" },
+          { src: typescript, alt: "typescript", techno: "Typescript" },
+          { src: sass, alt: "sass", techno: "Sass" },
+          { src: tailwind, alt: "tailwind", techno: "TailwindCSS" },
         ]}
       />
     </>
