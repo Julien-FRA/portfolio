@@ -1,6 +1,10 @@
 @use "./colors.scss";
 @use "./typography.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: colors.$main;
   margin: 0;

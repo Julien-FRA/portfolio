@@ -15,7 +15,7 @@ type BlockProps = {
 
 const Block = ({ title, items }: BlockProps) => {
   return (
-    <section className={styles.block}>
+    <section className={styles.block} id="experiences">
       <div className={styles.wrapper}>
         <h2 className={styles.blockTitle}>{title}</h2>
         <div className={styles.wrapperItems}>

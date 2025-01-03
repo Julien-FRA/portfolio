@@ -12,7 +12,7 @@ type StackProps = {
 
 const Stack = ({ title, items }: StackProps) => {
   return (
-    <section className={styles.stack}>
+    <section className={styles.stack} id="technologies">
       <div className={styles.wrapper}>
         <h2 className={styles.stackTitle}>{title}</h2>
         <div className={styles.items}>

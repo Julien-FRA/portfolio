@@ -10,17 +10,28 @@ const Footer = () => {
       <div className={styles.wrapper}>
         <ul className={styles.footerSocial}>
           <li className={styles.footerSocialItem}>
-            <a href="#" className={styles.footerSocialLink}>
+            <a
+              href="https://github.com/Julien-FRA"
+              target="_blank"
+              className={styles.footerSocialLink}
+            >
               <Image src={github} alt={"github"} />
             </a>
           </li>
           <li className={styles.footerSocialItem}>
-            <a href="#" className={styles.footerSocialLink}>
+            <a
+              href="https://www.linkedin.com/in/julien-francois-07140617a/"
+              target="_blank"
+              className={styles.footerSocialLink}
+            >
               <Image src={linkedin} alt={"linkedin"} />
             </a>
           </li>
           <li className={styles.footerSocialItem}>
-            <a href="#" className={styles.footerSocialLink}>
+            <a
+              href="mailto:julien.fra3@gmail.com"
+              className={styles.footerSocialLink}
+            >
               <Image src={mail} alt={"mail"} />
             </a>
           </li>

@@ -12,7 +12,7 @@ type ListProps = {
 
 const List = ({ title, items }: ListProps) => {
   return (
-    <section className={styles.list}>
+    <section className={styles.list} id="projects">
       <div className={styles.wrapper}>
         <h2 className={styles.ListTitle}>{title}</h2>
         <ul>
