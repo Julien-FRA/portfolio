@@ -4,22 +4,22 @@ import "../styles/global.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export const degular_medium = localFont({
+const degular_medium = localFont({
   src: "../assets/fonts/Degular-Medium.woff2",
   variable: "--font-degular-medium",
 });
 
-export const degular_semiBold = localFont({
+const degular_semiBold = localFont({
   src: "../assets/fonts/Degular-Semibold.woff2",
   variable: "--font-degular-semiBold",
 });
 
-export const acumin_regular = localFont({
+const acumin_regular = localFont({
   src: "../assets/fonts/Acumin-RPro.woff2",
   variable: "--font-acumin-regular",
 });
 
-export const acumin_bold = localFont({
+const acumin_bold = localFont({
   src: "../assets/fonts/Acumin-BdPro.woff2",
   variable: "--font-acumin-bold",
 });
