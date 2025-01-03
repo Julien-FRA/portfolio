@@ -49,35 +49,35 @@ export default function Home() {
           {
             subtitle: "Envify",
             caption: "Next.js - Typescript - Mantine",
-            content: `Application Saas qui a pour objectif la configuration
-                d’instances cloud. Développement de la partie front-end en
-                Next.js. Utilisation de fetch et react-query pour nos différents
-                appels API. NextAuth pour la gestion de l’authentification.
-                Implémentation de Typescript pour le typage des variables,
-                constantes, props... Mantine pour la partie UI de l’application.
-                Hooks personnalisés pour la gestion des formulaires. Mise en
-                place de tests avec Jest. Création et test des composants avec
+            content: `Saas application for configuring
+                cloud instances. Development of the front-end in
+                Next.js. Use of fetch and react-query for our various
+                API calls. NextAuth for authentication management.
+                Implementation of Typescript for variable typing,
+                constants, props, etc. Mantine for the application's UI.
+                Custom hooks for managing forms. Implementation
+                tests with Jest. Creating and testing components with
                 Storybook.`,
             href: "/",
           },
           {
             subtitle: "Katas",
             caption: "Typescript - React - Node.js - Express.js",
-            content: `Création de sites e-commerce et blog. Développement avec
-                Node.js, Typescript et Express.js pour la partie back-end.
-                Architecture MVC. JSON Web Token pour la gestion de
-                l’authentification. Développement avec React et Typescript pour
-                la partie front-end. Utilisation de fetch. Routing avec
-                react-router-dom. Gestion des formulaires avec react-hook-form.`,
+            content: `Creation of e-commerce sites and blogs. Development with
+                Node.js, Typescript and Express.js for the back-end.
+                MVC architecture. JSON Web Token for authentication
+                authentication. Development with React and Typescript for the
+                the front-end. Use of fetch. Routing with
+                react-router-dom. Form management with react-hook-form.`,
             href: "/",
           },
           {
             subtitle: "Algorithmes",
             caption: "Typescript - Jest",
-            content: `Résolution de plusieurs algorithmes sur Leetcode avec
-                Typescript. Utilisation des boucles for, while, map()...
-                Conditions if et else... Implémentation de Jest pour tester les
-                algorithmes.`,
+            content: `Solving many algorithms on Leetcode with
+                Typescript. Using for, while and map() loops...
+                if and else conditions... Implementation of Jest to test
+                algorithms.`,
             href: "/",
           },
         ]}

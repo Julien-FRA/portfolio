@@ -36,34 +36,45 @@ const Header = () => {
         <nav className={`${styles[active]}`}>
           <ul className={styles.headerNav}>
             <li className={styles.headerNavItem}>
-              <a href="#" className={styles.headerNavLink}>
-                Work
+              <a href="#experiences" className={styles.headerNavLink}>
+                Experiences
               </a>
             </li>
             <li className={styles.headerItem}>
-              <a href="#" className={styles.headerLink}>
+              <a href="#projects" className={styles.headerLink}>
                 Projects
               </a>
             </li>
             <li className={styles.headerItem}>
-              <a href="#" className={styles.headerLink}>
-                About
+              <a href="#technologies" className={styles.headerLink}>
+                Technologies
               </a>
             </li>
           </ul>
           <ul className={styles.headerSocial}>
             <li className={styles.headerSocialItem}>
-              <a href="#" className={styles.headerSocialLink}>
+              <a
+                href="https://github.com/Julien-FRA"
+                target="_blank"
+                className={styles.headerSocialLink}
+              >
                 <Image src={github} alt={"github"} />
               </a>
             </li>
             <li className={styles.headerSocialItem}>
-              <a href="#" className={styles.headerSocialLink}>
+              <a
+                href="https://www.linkedin.com/in/julien-francois-07140617a/"
+                target="_blank"
+                className={styles.headerSocialLink}
+              >
                 <Image src={linkedin} alt={"linkedin"} />
               </a>
             </li>
             <li className={styles.headerSocialItem}>
-              <a href="#" className={styles.headerSocialLink}>
+              <a
+                href="mailto:julien.fra3@gmail.com"
+                className={styles.headerSocialLink}
+              >
                 <Image src={mail} alt={"mail"} />
               </a>
             </li>
