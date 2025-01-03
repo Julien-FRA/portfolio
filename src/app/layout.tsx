@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../styles/global.scss";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const degular_medium = localFont({
   src: "../assets/fonts/Degular-Medium.woff2",
@@ -42,6 +43,7 @@ export default function RootLayout({
         <div className="grain"></div>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
