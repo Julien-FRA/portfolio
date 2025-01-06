@@ -14,7 +14,7 @@ const Text = ({title, items}: TextProps) => {
             <div className={styles.wrapper}>
                 <h2 className={styles.bigTitle}>{title}</h2>
                 {items.map((item, key) => (
-                    <div className={styles.paragraph}>
+                    <div key={key} className={styles.paragraph}>
                         <h3>{item.subtitle}</h3>
                         <p>{item.content}</p>
                     </div>
