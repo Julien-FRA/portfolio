@@ -6,6 +6,7 @@ import linkedin from "../../assets/images/linkedin.png";
 import mail from "../../assets/images/email.png";
 import { useRef, useState } from "react";
 import { useClickAway } from "react-use";
+import Link from "next/link";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -22,9 +23,9 @@ const Header = () => {
   return (
     <header ref={ref} className={styles.header}>
       <div className={styles.wrapper}>
-        <a href="#" className={`${styles.headerLogo} large`}>
+        <Link href="/" className={`${styles.headerLogo} large`}>
           Julien FRANCOIS
-        </a>
+        </Link>
         <div
           onClick={toggleMenu}
           className={`${styles.burgerMenu} ${styles[active]}`}

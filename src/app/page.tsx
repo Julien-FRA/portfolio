@@ -31,7 +31,7 @@ export default function Home() {
             alt: "HardisGroup",
             subtitle: "Hardis Group - 2022/2023",
             caption: "React, Javascript, Typescript, HTML, SCSS, CSS, Drupal.",
-            href: "/",
+            href: "/hardis",
           },
           {
             src: logoIndexel,
@@ -39,7 +39,7 @@ export default function Home() {
             subtitle: "Indexel - 2021/2022",
             caption:
               "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul.",
-            href: "/",
+            href: "/indexel",
           },
         ]}
       />
