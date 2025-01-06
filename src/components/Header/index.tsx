@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header ref={ref} className={styles.header}>
       <div className={styles.wrapper}>
-        <a href="#" className={`${styles.headerLogo} large`}>
+        <a href="/" className={`${styles.headerLogo} large`}>
           Julien FRANCOIS
         </a>
         <div
