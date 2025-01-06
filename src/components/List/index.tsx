@@ -20,8 +20,10 @@ const List = ({ title, items }: ListProps) => {
             <li className={styles.item} key={key}>
               <input type="checkbox" name="accordion" id={`acc` + key} />
               <label className={styles.label} htmlFor={`acc` + key}>
-                <h3>{item.subtitle}</h3>
-                <p>{item.caption}</p>
+                <div className={styles.container}>
+                  <h3>{item.subtitle}</h3>
+                  <p>{item.caption}</p>
+                </div>
                 <span />
               </label>
               <div className={styles.content}>
