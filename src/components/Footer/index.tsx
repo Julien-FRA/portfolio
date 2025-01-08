@@ -3,6 +3,7 @@ import Image from "next/image";
 import github from "../../assets/images/github.png";
 import linkedin from "../../assets/images/linkedin.png";
 import mail from "../../assets/images/email.png";
+import cv from "../../assets/images/cv.png";
 
 const Footer = () => {
   return (
@@ -33,6 +34,15 @@ const Footer = () => {
               className={styles.footerSocialLink}
             >
               <Image src={mail} alt={"mail"} />
+            </a>
+          </li>
+          <li className={styles.footerSocialItem}>
+            <a
+              href="./CV_Julien_Francois_Fullstack.pdf"
+              target="_blank"
+              className={styles.footerSocialLink}
+            >
+              <Image src={cv} alt={"cv"} />
             </a>
           </li>
         </ul>
