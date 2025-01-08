@@ -28,7 +28,6 @@ const List = ({ title, items }: ListProps) => {
               </label>
               <div className={styles.content}>
                 <p className="small">{item.content}</p>
-                <a href={item.href}>Learn more</a>
               </div>
             </li>
           ))}

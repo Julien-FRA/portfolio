@@ -4,6 +4,7 @@ import styles from "./Header.module.scss";
 import github from "../../assets/images/github.png";
 import linkedin from "../../assets/images/linkedin.png";
 import mail from "../../assets/images/email.png";
+import cv from "../../assets/images/cv.png";
 import { useRef, useState } from "react";
 import { useClickAway } from "react-use";
 import Link from "next/link";
@@ -77,6 +78,11 @@ const Header = () => {
                 className={styles.headerSocialLink}
               >
                 <Image src={mail} alt={"mail"} />
+              </a>
+            </li>
+            <li className={styles.headerSocialItem}>
+              <a href="./CV_Julien_Francois_Fullstack.pdf" target="_blank">
+                <Image src={cv} alt={"cv"} />
               </a>
             </li>
           </ul>
