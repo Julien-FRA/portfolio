@@ -2,21 +2,24 @@ import Block from "@/components/Block";
 import Hero from "@/components/Hero";
 import List from "@/components/List";
 import Stack from "@/components/Stack";
-import logoHardisGroup from "../assets/images/hardisgroup.png";
-import logoIndexel from "../assets/images/indexel-logo.png";
-import nextjs from "../assets/images/nextjs-icon.svg";
-import react from "../assets/images/react.svg";
-import typescript from "../assets/images/typescript-icon.svg";
-import nodejs from "../assets/images/nodejs-icon.svg";
-import sass from "../assets/images/sass.svg";
-import tailwind from "../assets/images/tailwindcss-icon.svg";
+import logoHardisGroup from "../../assets/images/hardisgroup.png";
+import logoIndexel from "../../assets/images/indexel-logo.png";
+import nextjs from "../../assets/images/nextjs-icon.svg";
+import react from "../../assets/images/react.svg";
+import typescript from "../../assets/images/typescript-icon.svg";
+import nodejs from "../../assets/images/nodejs-icon.svg";
+import sass from "../../assets/images/sass.svg";
+import tailwind from "../../assets/images/tailwindcss-icon.svg";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("HomePage");
+
   return (
     <>
       <Hero
-        location={"Based in Paris"}
-        title={"Hi, this is Julien"}
+        location={t("Hero.location")}
+        title={t("Hero.title")}
         subtitle={[
           { normal: "Developer", bold: "Front-end/Fullstack Javascript" },
           { normal: "Currently", bold: "Looking for work" },

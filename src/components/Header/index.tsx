@@ -8,6 +8,7 @@ import cv from "../../assets/images/cv.png";
 import { useRef, useState } from "react";
 import { useClickAway } from "react-use";
 import Link from "next/link";
+import LocaleSwitcher from "../LocaleSwitcher";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -85,6 +86,7 @@ const Header = () => {
                 <Image src={cv} alt={"cv"} />
               </a>
             </li>
+            <LocaleSwitcher />
           </ul>
         </nav>
       </div>

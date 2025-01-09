@@ -1,0 +1,78 @@
+{
+  "LocaleSwitcher": {
+    "locale": "{locale, select, fr {FR} en {EN} other {Unknown}}"
+  },
+  "HomePage": {
+    "Hero": {
+      "location": "Basé à Paris",
+      "title": "Salut, c'est Julien",
+      "subtitle": [
+        {
+          "normal": "Développeur",
+          "bold": "Front-end/Fullstack Javascript"
+        },
+        {
+          "normal": "Actuellement",
+          "bold": "À la recherche d'un emploi"
+        },
+        {
+          "normal": "Précédemment",
+          "bold": "Hardis Group, Indexel"
+        }
+      ]
+    },
+    "Block": {
+      "title": "Expériences",
+      "items": [
+        {
+          "src": "logoHardisGroup",
+          "alt": "HardisGroup",
+          "subtitle": "Hardis Group - 2022/2023",
+          "caption": "React, Javascript, Typescript, HTML, SCSS, CSS, Drupal.",
+          "href": "/hardis"
+        },
+        {
+          "src": "logoIndexel",
+          "alt": "Indexel",
+          "subtitle": "Indexel - 2021/2022",
+          "caption": "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul.",
+          "href": "/indexel"
+        }
+      ]
+    },
+    "List": {
+      "title": "Projets",
+      "items": [
+        {
+          "subtitle": "Envify",
+          "caption": "Next.js - Typescript - Mantine",
+          "content": "Application Saas pour configurer des instances cloud. Développement du front-end avec Next.js. Utilisation de fetch et react-query pour les appels API. Gestion de l'authentification avec NextAuth. Mise en œuvre de Typescript pour le typage des variables, constantes, props, etc. Utilisation de Mantine pour l'interface utilisateur de l'application. Hooks personnalisés pour la gestion des formulaires. Tests avec Jest. Création et test de composants avec Storybook.",
+          "href": "/"
+        },
+        {
+          "subtitle": "Katas",
+          "caption": "Typescript - React - Node.js - Express.js",
+          "content": "Création de sites e-commerce et de blogs. Développement avec Node.js, Typescript et Express.js pour le back-end. Architecture MVC. Authentification avec JSON Web Token. Développement du front-end avec React et Typescript. Utilisation de fetch. Routage avec react-router-dom. Gestion des formulaires avec react-hook-form.",
+          "href": "/"
+        },
+        {
+          "subtitle": "Algorithmes",
+          "caption": "Typescript - Jest",
+          "content": "Résolution de nombreux algorithmes sur Leetcode avec Typescript. Utilisation des boucles for, while et map()... Conditions if et else... Implémentation de Jest pour tester les algorithmes.",
+          "href": "/"
+        }
+      ]
+    },
+    "Stack": {
+      "title": "Technologies",
+      "items": [
+        { "src": "react", "alt": "reactjs", "techno": "Reactjs" },
+        { "src": "nextjs", "alt": "nextjs", "techno": "Nextjs" },
+        { "src": "nodejs", "alt": "nodejs", "techno": "Nodejs" },
+        { "src": "typescript", "alt": "typescript", "techno": "Typescript" },
+        { "src": "sass", "alt": "sass", "techno": "Sass" },
+        { "src": "tailwind", "alt": "tailwind", "techno": "TailwindCSS" }
+      ]
+    }
+  }
+}

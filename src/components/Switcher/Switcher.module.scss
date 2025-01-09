@@ -1,0 +1,14 @@
+@use "../../styles/colors.scss";
+
+.switcher {
+  position: relative;
+  z-index: 2000;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  option {
+    background-color: colors.$main;
+  }
+}
