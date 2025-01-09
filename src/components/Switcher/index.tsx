@@ -20,7 +20,9 @@ export default function Switcher({ children, defaultValue }: SwitcherProps) {
     const nextLocale = event.target.value as Locale;
     startTransition(() => {
       router.replace(
-        // @ts-expect-error
+        // @ts-expect-error -- TypeScript will validate that only known `params`
+        // are used in combination with a given `pathname`. Since the two will
+        // always match for the current route, we can skip runtime checks.
         { pathname, params },
         { locale: nextLocale }
       );

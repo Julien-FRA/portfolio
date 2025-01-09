@@ -40,6 +40,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
