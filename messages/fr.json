@@ -2,77 +2,148 @@
   "LocaleSwitcher": {
     "locale": "{locale, select, fr {FR} en {EN} other {Unknown}}"
   },
+  "Navigation": {
+    "experiences": "Expériences",
+    "projects": "Projets",
+    "techno": "Technologies"
+  },
   "HomePage": {
     "Hero": {
       "location": "Basé à Paris",
       "title": "Salut, c'est Julien",
-      "subtitle": [
-        {
-          "normal": "Développeur",
-          "bold": "Front-end/Fullstack Javascript"
-        },
-        {
-          "normal": "Actuellement",
-          "bold": "À la recherche d'un emploi"
-        },
-        {
-          "normal": "Précédemment",
-          "bold": "Hardis Group, Indexel"
-        }
-      ]
+      "subtitleOne": {
+        "normal": "Développeur",
+        "bold": "Front-end/Fullstack Javascript"
+      },
+      "subtitleTwo": {
+        "normal": "Actuellement",
+        "bold": "À la recherche d'un emploi"
+      },
+      "subtitleThree": {
+        "normal": "Précédemment",
+        "bold": "Hardis Group, Indexel"
+      }
     },
     "Block": {
       "title": "Expériences",
-      "items": [
-        {
-          "src": "logoHardisGroup",
-          "alt": "HardisGroup",
-          "subtitle": "Hardis Group - 2022/2023",
-          "caption": "React, Javascript, Typescript, HTML, SCSS, CSS, Drupal.",
-          "href": "/hardis"
-        },
-        {
-          "src": "logoIndexel",
-          "alt": "Indexel",
-          "subtitle": "Indexel - 2021/2022",
-          "caption": "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul.",
-          "href": "/indexel"
-        }
-      ]
+      "itemsOne": {
+        "src": "logoHardisGroup",
+        "alt": "HardisGroup",
+        "subtitle": "Hardis Group - 2022/2023",
+        "caption": "React, Javascript, Typescript, HTML, SCSS, CSS, Drupal.",
+        "href": "{locale}/hardis"
+      },
+      "itemsTwo": {
+        "src": "logoIndexel",
+        "alt": "Indexel",
+        "subtitle": "Indexel - 2021/2022",
+        "caption": "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul.",
+        "href": "{locale}/indexel"
+      }
     },
     "List": {
       "title": "Projets",
-      "items": [
-        {
-          "subtitle": "Envify",
-          "caption": "Next.js - Typescript - Mantine",
-          "content": "Application Saas pour configurer des instances cloud. Développement du front-end avec Next.js. Utilisation de fetch et react-query pour les appels API. Gestion de l'authentification avec NextAuth. Mise en œuvre de Typescript pour le typage des variables, constantes, props, etc. Utilisation de Mantine pour l'interface utilisateur de l'application. Hooks personnalisés pour la gestion des formulaires. Tests avec Jest. Création et test de composants avec Storybook.",
-          "href": "/"
-        },
-        {
-          "subtitle": "Katas",
-          "caption": "Typescript - React - Node.js - Express.js",
-          "content": "Création de sites e-commerce et de blogs. Développement avec Node.js, Typescript et Express.js pour le back-end. Architecture MVC. Authentification avec JSON Web Token. Développement du front-end avec React et Typescript. Utilisation de fetch. Routage avec react-router-dom. Gestion des formulaires avec react-hook-form.",
-          "href": "/"
-        },
-        {
-          "subtitle": "Algorithmes",
-          "caption": "Typescript - Jest",
-          "content": "Résolution de nombreux algorithmes sur Leetcode avec Typescript. Utilisation des boucles for, while et map()... Conditions if et else... Implémentation de Jest pour tester les algorithmes.",
-          "href": "/"
-        }
-      ]
+      "itemsOne": {
+        "subtitle": "Envify",
+        "caption": "Next.js - Typescript - Mantine",
+        "content": "Application Saas pour configurer des instances cloud. Développement du front-end avec Next.js. Utilisation de fetch et react-query pour les appels API. Gestion de l'authentification avec NextAuth. Mise en œuvre de Typescript pour le typage des variables, constantes, props, etc. Utilisation de Mantine pour l'interface utilisateur de l'application. Hooks personnalisés pour la gestion des formulaires. Tests avec Jest. Création et test de composants avec Storybook.",
+        "href": "/"
+      },
+      "itemsTwo": {
+        "subtitle": "Katas",
+        "caption": "Typescript - React - Node.js - Express.js",
+        "content": "Création de sites e-commerce et de blogs. Développement avec Node.js, Typescript et Express.js pour le back-end. Architecture MVC. Authentification avec JSON Web Token. Développement du front-end avec React et Typescript. Utilisation de fetch. Routage avec react-router-dom. Gestion des formulaires avec react-hook-form.",
+        "href": "/"
+      },
+      "itemsThree": {
+        "subtitle": "Algorithmes",
+        "caption": "Typescript - Jest",
+        "content": "Résolution de nombreux algorithmes sur Leetcode avec Typescript. Utilisation des boucles for, while et map()... Conditions if et else... Implémentation de Jest pour tester les algorithmes.",
+        "href": "/"
+      }
     },
     "Stack": {
       "title": "Technologies",
-      "items": [
-        { "src": "react", "alt": "reactjs", "techno": "Reactjs" },
-        { "src": "nextjs", "alt": "nextjs", "techno": "Nextjs" },
-        { "src": "nodejs", "alt": "nodejs", "techno": "Nodejs" },
-        { "src": "typescript", "alt": "typescript", "techno": "Typescript" },
-        { "src": "sass", "alt": "sass", "techno": "Sass" },
-        { "src": "tailwind", "alt": "tailwind", "techno": "TailwindCSS" }
-      ]
+      "itemsOne": { "src": "react", "alt": "reactjs", "techno": "Reactjs" },
+      "itemsTwo": { "src": "nextjs", "alt": "nextjs", "techno": "Nextjs" },
+      "itemsThree": { "src": "nodejs", "alt": "nodejs", "techno": "Nodejs" },
+      "itemsFour": {
+        "src": "typescript",
+        "alt": "typescript",
+        "techno": "Typescript"
+      },
+      "itemsFive": { "src": "sass", "alt": "sass", "techno": "Sass" },
+      "itemsSix": {
+        "src": "tailwind",
+        "alt": "tailwind",
+        "techno": "TailwindCSS"
+      }
+    }
+  },
+  "Hardis": {
+    "Hero": {
+      "title": "Hardis Group",
+      "location": "Basé à La Défense",
+      "subtitleOne": {
+        "normal": "Rôle",
+        "bold": "Développeur Front-end"
+      },
+      "subtitleTwo": {
+        "normal": "Période",
+        "bold": "Sept 2022 - Nov 2023"
+      }
+    },
+    "Text": {
+      "title": "Inspiring new ways",
+      "itemsOne": {
+        "subtitle": "Stack",
+        "content": "React, Javascript, Typescript, HTML, SCSS, CSS, Drupal."
+      },
+      "itemsTwo": {
+        "subtitle": "Uneo",
+        "content": "Développement de site web de la mutuelle des forces armées à partir de zéro avec React. Utilisation de React Router, gestion des formulaires avec React Hook Form, création et intégration de composants en SCSS. Méthode agile Scrum pour la gestion du projet."
+      },
+      "itemsThree": {
+        "subtitle": "Comité Champagne",
+        "content": "Développement de l'extranet du Comité Champagne à partir de zéro. Intégration des maquettes en SCSS/Bootstrap, collaboration et conseils avec les équipes UX/UI. Collaboration avec les équipes back-end Drupal. Méthode agile Scrum pour la gestion du projet."
+      },
+      "itemsFour": {
+        "subtitle": "Telemecanique Sensors",
+        "content": "Développement du site web de Telemecanique Sensors à partir de zéro. Intégration des composants modèles en Vue.js avec SCSS/Bootstrap, collaboration et conseils avec les équipes UX/UI. Collaboration avec les équipes back-end Drupal. Méthode agile Scrum pour la gestion du projet."
+      }
+    }
+  },
+  "Indexel": {
+    "Hero": {
+      "title": "Indexel",
+      "location": "Basé à Bastille",
+      "subtitleOne": {
+        "normal": "Rôle",
+        "bold": "Développeur Front-end"
+      },
+      "subtitleTwo": {
+        "normal": "Période",
+        "bold": "Juin 2021 - Sept 2022"
+      }
+    },
+    "Text": {
+      "title": "Smarter than Louder",
+      "itemsOne": {
+        "subtitle": "Stack",
+        "content": "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul."
+      },
+      "itemsTwo": {
+        "subtitle": "Epsilon",
+        "content": "Développement de thèmes WordPress entièrement personnalisés pour nos clients. Utilisation du plugin ACF pour créer des modules dans WordPress. Intégration en HTML, SCSS et Javascript pour le front-end."
+      },
+      "itemsThree": {
+        "subtitle": "Indexel, Certivéa, Leasecom, Capza, Armée du salut...",
+        "content": "Maintenance et création des sites web des clients en utilisant notre thème personnalisé Epsilon. Suivi et résolution des tickets. Développement en PHP avec WordPress. Utilisation de Javascript, HTML et SCSS pour le front-end."
+      },
+      "itemsFour": {
+        "subtitle": "Cookit",
+        "content": "Développement complet et maintenance d'une solution de gestion RGPD pour nos clients."
+      }
     }
   }
 }
