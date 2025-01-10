@@ -8,6 +8,8 @@ import cv from "../../assets/images/cv.png";
 import { useRef, useState } from "react";
 import { useClickAway } from "react-use";
 import Link from "next/link";
+import LocaleSwitcher from "../LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -20,6 +22,8 @@ const Header = () => {
   };
 
   const active = openMenu ? "active" : "";
+
+  const t = useTranslations("Navigation");
 
   return (
     <header ref={ref} className={styles.header}>
@@ -39,17 +43,17 @@ const Header = () => {
           <ul className={styles.headerNav}>
             <li className={styles.headerNavItem}>
               <a href="#experiences" className={styles.headerNavLink}>
-                Experiences
+                {t("experiences")}
               </a>
             </li>
             <li className={styles.headerItem}>
               <a href="#projects" className={styles.headerLink}>
-                Projects
+                {t("projects")}
               </a>
             </li>
             <li className={styles.headerItem}>
               <a href="#technologies" className={styles.headerLink}>
-                Technologies
+                {t("techno")}
               </a>
             </li>
           </ul>
@@ -85,6 +89,7 @@ const Header = () => {
                 <Image src={cv} alt={"cv"} />
               </a>
             </li>
+            <LocaleSwitcher />
           </ul>
         </nav>
       </div>

@@ -37,7 +37,9 @@ h3,
   margin-bottom: 0;
 }
 
-a {
+a,
+option,
+select {
   display: block;
   font-family: var(--font-degular-semiBold);
   line-height: 1.8em;

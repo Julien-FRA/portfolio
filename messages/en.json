@@ -1,0 +1,149 @@
+{
+  "LocaleSwitcher": {
+    "locale": "{locale, select, fr {FR} en {EN} other {Unknown}}"
+  },
+  "Navigation": {
+    "experiences": "Experiences",
+    "projects": "Projects",
+    "techno": "Technologies"
+  },
+  "HomePage": {
+    "Hero": {
+      "location": "Based in Paris",
+      "title": "Hi, this is Julien",
+      "subtitleOne": {
+        "normal": "Developer",
+        "bold": "Front-end/Fullstack Javascript"
+      },
+      "subtitleTwo": {
+        "normal": "Currently",
+        "bold": "Looking for work"
+      },
+      "subtitleThree": {
+        "normal": "Previously",
+        "bold": "Hardis Group, Indexel"
+      }
+    },
+    "Block": {
+      "title": "Experiences",
+      "itemsOne": {
+        "src": "logoHardisGroup",
+        "alt": "HardisGroup",
+        "subtitle": "Hardis Group - 2022/2023",
+        "caption": "React, Javascript, Typescript, HTML, SCSS, CSS, Drupal.",
+        "href": "{locale}/hardis"
+      },
+      "itemsTwo": {
+        "src": "logoIndexel",
+        "alt": "Indexel",
+        "subtitle": "Indexel - 2021/2022",
+        "caption": "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul.",
+        "href": "{locale}/indexel"
+      }
+    },
+    "List": {
+      "title": "Projects",
+      "itemsOne": {
+        "subtitle": "Envify",
+        "caption": "Next.js - Typescript - Mantine",
+        "content": "Saas application for configuring cloud instances. Development of the front-end in Next.js. Use of fetch and react-query for our various API calls. NextAuth for authentication management. Implementation of Typescript for variable typing, constants, props, etc. Mantine for the application's UI. Custom hooks for managing forms. Implementation tests with Jest. Creating and testing components with Storybook.",
+        "href": "/"
+      },
+      "itemsTwo": {
+        "subtitle": "Katas",
+        "caption": "Typescript - React - Node.js - Express.js",
+        "content": "Creation of e-commerce sites and blogs. Development with Node.js, Typescript and Express.js for the back-end. MVC architecture. JSON Web Token for authentication. Development with React and Typescript for the front-end. Use of fetch. Routing with react-router-dom. Form management with react-hook-form.",
+        "href": "/"
+      },
+      "itemsThree": {
+        "subtitle": "Algorithmes",
+        "caption": "Typescript - Jest",
+        "content": "Solving many algorithms on Leetcode with Typescript. Using for, while and map() loops... if and else conditions... Implementation of Jest to test algorithms.",
+        "href": "/"
+      }
+    },
+    "Stack": {
+      "title": "Technologies",
+      "itemsOne": { "src": "react", "alt": "reactjs", "techno": "Reactjs" },
+      "itemsTwo": { "src": "nextjs", "alt": "nextjs", "techno": "Nextjs" },
+      "itemsThree": { "src": "nodejs", "alt": "nodejs", "techno": "Nodejs" },
+      "itemsFour": {
+        "src": "typescript",
+        "alt": "typescript",
+        "techno": "Typescript"
+      },
+      "itemsFive": { "src": "sass", "alt": "sass", "techno": "Sass" },
+      "itemsSix": {
+        "src": "tailwind",
+        "alt": "tailwind",
+        "techno": "TailwindCSS"
+      }
+    }
+  },
+  "Hardis": {
+    "Hero": {
+      "title": "Hardis Group",
+      "location": "Based in La Défense",
+      "subtitleOne": {
+        "normal": "Role",
+        "bold": "Front end developer"
+      },
+      "subtitleTwo": {
+        "normal": "Timeline",
+        "bold": "Sept 2022 - Nov 2023"
+      }
+    },
+    "Text": {
+      "title": "Inspiring new ways",
+      "itemsOne": {
+        "subtitle": "Stack",
+        "content": "React, Javascript, Typescript, HTML, SCSS, CSS, Drupal."
+      },
+      "itemsTwo": {
+        "subtitle": "Uneo",
+        "content": "From scratch, website development of the armed forces mutual insurance company in React. Use of react router, forms management with react hook form, components creation and integration in scss. Agile scrum method for project management."
+      },
+      "itemsThree": {
+        "subtitle": "Comité champagne",
+        "content": "From scratch, champagne committee's extranet development. Mock-ups integration in scss/bootstrap, collaboration and advice with UX/UI teams. Collaboration with Drupal back-end teams. Agile scrum method for project management."
+      },
+      "itemsFour": {
+        "subtitle": "Telemecanique Sensors",
+        "content": "From scratch, Telemecanique Sensors website development. Model components integration in Vue.js with scss/bootstrap, collaboration and advice with UX/UI teams. Collaboration with Drupal back-end teams. Agile scrum method for project management."
+      }
+    }
+  },
+  "Indexel": {
+    "Hero": {
+      "title": "Indexel",
+      "location": "Based in Bastille",
+      "subtitleOne": {
+        "normal": "Role",
+        "bold": "Front-end Developer"
+      },
+      "subtitleTwo": {
+        "normal": "Timeline",
+        "bold": "June 2021 - September 2022"
+      }
+    },
+    "Text": {
+      "title": "Smarter than Louder",
+      "itemsOne": {
+        "subtitle": "Stack",
+        "content": "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul."
+      },
+      "itemsTwo": {
+        "subtitle": "Epsilon",
+        "content": "Full custom WordPress theme development for our clients. Use of the ACF plugin to create modules in WordPress. HTML, SCSS, and Javascript integration for the front-end."
+      },
+      "itemsThree": {
+        "subtitle": "Indexel, Certivéa, Leasecom, Capza, Armée du salut...",
+        "content": "Maintenance and creation of clients' websites using our custom theme Epsilon. Follow-up and resolution of tickets. Development in PHP with WordPress. Use of Javascript, HTML, and SCSS for the front-end."
+      },
+      "itemsFour": {
+        "subtitle": "Cookit",
+        "content": "Full development and maintenance of an RGPD management solution for our clients."
+      }
+    }
+  }
+}
