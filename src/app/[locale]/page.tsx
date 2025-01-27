@@ -4,12 +4,14 @@ import List from "@/components/List";
 import Stack from "@/components/Stack";
 import logoHardisGroup from "../../assets/images/hardisgroup.png";
 import logoIndexel from "../../assets/images/indexel-logo.png";
+import logoTrackoe from "../../assets/images/trackoe.png";
 import nextjs from "../../assets/images/nextjs-icon.svg";
 import react from "../../assets/images/react.svg";
 import typescript from "../../assets/images/typescript-icon.svg";
 import nodejs from "../../assets/images/nodejs-icon.svg";
 import sass from "../../assets/images/sass.svg";
-import tailwind from "../../assets/images/tailwindcss-icon.svg";
+import java from "../../assets/images/java.svg";
+import angular from "../../assets/images/angular-icon.svg";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function Home() {
@@ -40,6 +42,13 @@ export default function Home() {
       <Block
         title={t("Block.title")}
         items={[
+          {
+            src: logoTrackoe,
+            alt: t("Block.itemsThree.alt"),
+            subtitle: t("Block.itemsThree.subtitle"),
+            caption: t("Block.itemsThree.caption"),
+            href: t("Block.itemsThree.href", { locale }),
+          },
           {
             src: logoHardisGroup,
             alt: t("Block.itemsOne.alt"),
@@ -83,9 +92,19 @@ export default function Home() {
         title={t("Stack.title")}
         items={[
           {
+            src: java,
+            alt: t("Stack.itemsSix.alt"),
+            techno: t("Stack.itemsSix.techno"),
+          },
+          {
             src: react,
             alt: t("Stack.itemsOne.alt"),
             techno: t("Stack.itemsOne.techno"),
+          },
+          {
+            src: angular,
+            alt: t("Stack.itemsSeven.alt"),
+            techno: t("Stack.itemsSeven.techno"),
           },
           {
             src: nextjs,
@@ -106,11 +125,6 @@ export default function Home() {
             src: sass,
             alt: t("Stack.itemsFive.alt"),
             techno: t("Stack.itemsFive.techno"),
-          },
-          {
-            src: tailwind,
-            alt: t("Stack.itemsSix.alt"),
-            techno: t("Stack.itemsSix.techno"),
           },
         ]}
       />

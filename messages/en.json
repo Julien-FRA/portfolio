@@ -13,11 +13,11 @@
       "title": "Hi, this is Julien",
       "subtitleOne": {
         "normal": "Developer",
-        "bold": "Front-end/Fullstack Javascript"
+        "bold": "Front-end/Fullstack Java/Angular/React"
       },
       "subtitleTwo": {
         "normal": "Currently",
-        "bold": "Looking for work"
+        "bold": "Developer fullstack at Trackoe"
       },
       "subtitleThree": {
         "normal": "Previously",
@@ -39,6 +39,13 @@
         "subtitle": "Indexel - 2021/2022",
         "caption": "React, Javascript, PHP, HTML, SCSS, CSS, WordPress, ContentFul.",
         "href": "{locale}/indexel"
+      },
+      "itemsThree": {
+        "src": "logoTrackoe",
+        "alt": "Trackoe",
+        "subtitle": "Trackoe - 2025",
+        "caption": "Java, AngularJS, Javascript, HTML, CSS.",
+        "href": "{locale}/trackoe"
       }
     },
     "List": {
@@ -74,9 +81,14 @@
       },
       "itemsFive": { "src": "sass", "alt": "sass", "techno": "Sass" },
       "itemsSix": {
-        "src": "tailwind",
-        "alt": "tailwind",
-        "techno": "TailwindCSS"
+        "src": "java",
+        "alt": "java",
+        "techno": "Java"
+      },
+      "itemsSeven": {
+        "src": "angular",
+        "alt": "angular",
+        "techno": "Angularjs"
       }
     }
   },
